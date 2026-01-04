@@ -1,0 +1,23 @@
+@import url('reset.css');
+
+/* Basic */
+:root {
+  --primary-dark-color: #212121;
+}
+
+body {
+  font-size: 14px;
+}
+
+.container {
+  width: 1186px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-dark-color);
+  text-align: center;
+}
