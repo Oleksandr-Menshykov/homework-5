@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -11,22 +15,24 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-logo">
-        <a class="logo" href="index.html">
-          <img src="img/logo.png" alt="Webstudio logo">
-        </a>
+      <div class="header-container">
+        <div class="header-logo">
+          <a class="logo" href="index.html">
+            <img src="img/WebStudio.svg" alt="Webstudio logo">
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="tel:380961111111">+38 096 111 11 11</a>
+        </address>
       </div>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="header-address">
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:380961111111">+38 096 111 11 11</a>
-      </address>
     </div>
   </header>
   <main>
@@ -34,41 +40,45 @@
       <div class="container">
         <h1 class="hero-title">Effective solutions for your business</h1>
         <button class="hero-btn">Order service</button>
-        <ul class="hero-feature-list">
-          <li>
+      </div>
+    </section>
+    <section class="feature-section">
+      <div class="container">
+        <ul class="feature-list">
+          <li class="feature-list-item">
             <div>
-              <p>Attention to detail</p>
+              <p class="feature-list-title">Attention to detail</p>
               <p>Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
             </div>
           </li>
-          <li>
+          <li class="feature-list-item">
             <div>
-              <p>h-Planning</p>
+              <p class="feature-list-title">h-Planning</p>
               <p>The task of the organization, in particular the scope and location of personnel training, entails.</p>
             </div>
           </li>
-          <li>
+          <li class="feature-list-item">
             <div>
-              <p>Planning</p>
+              <p class="feature-list-title">Planning</p>
               <p>Equally, consultation with a broad asset is largely conditional.</p>
             </div>
           </li>
-          <li>
+          <li class="feature-list-item">
             <div>
-              <p>Modern technologies</p>
+              <p class="feature-list-title">Modern technologies</p>
               <p>The significance of these problems is so obvious that the implementation of planned targets.</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="what-we-do">
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
-        <ul class="list">
-          <li><img src="" alt="image 1"></li>
-          <li><img src="" alt="image 2"></li>
-          <li><img src="" alt="image 3"></li>
+        <ul class="what-we-do-list">
+          <li><img src="img/image-1.jpg" alt="image 1"></li>
+          <li><img src="img/image-2.jpg" alt="image 2"></li>
+          <li><img src="img/image-3.jpg" alt="image 3"></li>
         </ul>
       </div>
     </section>
@@ -77,48 +87,48 @@
         <h2 class="section-title">Our team</h2>
         <ul class="team-list">
           <li>
-            <div>
+            <article>
               <div>
-                <img src="img/" alt="Igor Demyanenko">
+                <img src="img/person-1.jpg" alt="Igor Demyanenko">
               </div>
-              <div>
+              <div class="team-card-info">
                 <p>Igor Demyanenko</p>
                 <p>Product Designer</p>
               </div>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
+            <article>
               <div>
-                <img src="img/" alt="Olga Repina">
+                <img src="img/person-2.jpg" alt="Olga Repina">
               </div>
-              <div>
+              <div class="team-card-info">
                 <p>Olga Repina</p>
                 <p>Frontend Developer</p>
               </div>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
+            <article>
               <div>
-                <img src="img/" alt="Nikolay Tarasov">
+                <img src="img/person-3.jpg" alt="Nikolay Tarasov">
               </div>
-              <div>
+              <div class="team-card-info">
                 <p>Nikolay Tarasov</p>
                 <p>Marketing</p>
               </div>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
+            <article>
               <div>
-                <img src="img/" alt="Mikhail Ermakov">
+                <img src="img/person-4.jpg" alt="Mikhail Ermakov">
               </div>
-              <div>
+              <div class="team-card-info">
                 <p>Mikhail Ermakov</p>
                 <p>Frontend Developer</p>
               </div>
-            </div>
+            </article>
           </li>
         </ul>
       </div>
