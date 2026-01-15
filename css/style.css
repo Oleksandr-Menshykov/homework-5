@@ -109,8 +109,20 @@ img {
 /* Hero-section */
 .hero {
   padding: 200px 0;
-  background-color: var(--secondary-color);
   text-align: center;
+  background: url(../img/background.jpg) no-repeat 50%/cover;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #2F303A66;
+}
+
+.hero-content {
+  position: relative;
 }
 
 .hero-title {
@@ -231,8 +243,6 @@ img {
 .cards-button:hover {
   background-color: var(--brand-color);
   box-shadow: 0px 2px 2px 0px #0000001F;
-  box-shadow: 0px 1px 2px 0px #00000014;
-  box-shadow: 0px 3px 1px 0px #0000001A;
 }
 
 .cards-list {
@@ -253,10 +263,13 @@ img {
 
 .card:hover {
   transform: scale(1.01);
+  transform: translateY(0);
   box-shadow: 0px 50px 80px -30px var(--brand-color);
 }
 
 .card-img-block {
+  position: relative;
+  overflow: hidden;
   height: 294px;
 }
 
@@ -264,6 +277,26 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.card-hidden-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: #2196F3E5;
+  color: var(--white-color);
+  padding-inline: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  transform: translateY(-100%);
+  transition: ease-in-out .4s;
+}
+
+.card:hover .card-hidden-block {
+  transform: translateY(0);
 }
 
 .card-content {
