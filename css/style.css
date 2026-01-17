@@ -220,6 +220,38 @@ img {
   flex-basis: 270px;
 }
 
+.feature-list-box {
+  position: relative;
+}
+
+.feature-list-box::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: var(--light-gray-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.feature-list li:nth-child(1) .feature-list-box::before {
+  background-image: url('/img/vector-1.png');
+}
+
+.feature-list li:nth-child(2) .feature-list-box::before {
+  background-image: url('/img/vector-2.png');
+}
+
+.feature-list li:nth-child(3) .feature-list-box::before {
+  background-image: url('/img/vector-3.png');
+}
+
+.feature-list li:nth-child(4) .feature-list-box::before {
+  background-image: url('/img/vector-4.png');
+}
+
 .feature-list-title {
   color: var(--primary-color);
   text-transform: uppercase;
