@@ -305,6 +305,17 @@ img {
   margin-top: 16px;
 }
 
+.team-card-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  transition: .3s;
+}
+
+.team-card-icon:hover {
+  fill: var(--brand-color);
+}
+
 /* CUSTOMERS */
 .customers {
   padding: 94px 0;
