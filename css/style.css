@@ -107,15 +107,21 @@ img {
 
 .header-nav-list a {
   display: block;
-  padding: 25px 0;
 }
 
 .header-nav-list-second,
 .header-nav-list-third {
-  display: none;
+  opacity: 0;
   position: absolute;
+  transform: translateY(30px);
   background-color: var(--light-gray-color);
   min-width: 180px;
+  pointer-events: none;
+  transition: ease-in-out .4s;
+}
+
+.header-nav-list-third {
+  transform: translateX(-30px);
 }
 
 .header-nav-list-second {
@@ -131,6 +137,7 @@ img {
   left: 0;
   width: 100%;
   height: 25px;
+
 }
 
 .header-nav-list-third {
@@ -141,7 +148,9 @@ img {
 
 .header-nav-list li:hover>.header-nav-list-second,
 .header-nav-list-second li:hover>.header-nav-list-third {
-  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .header-nav-list-second li a,
